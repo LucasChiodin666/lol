@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 4em;
+    color: #3cefff;
+    text-shadow: 0 0 15px #3cefff, 0 0 30px rgba(60, 239, 255, 0.5);
+}
+
+header p {
+    font-size: 1.5em;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+.role-section {
+    margin-bottom: 40px;
+}
+
+.role-section h2 {
+    font-size: 2.5em;
+    color: #3cefff;
+    text-shadow: 0 0 10px #3cefff;
+    margin-bottom: 20px;
+}
+
+.role-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.champion-card {
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    flex-grow: 1;
+    height: 300px; /* Ajusta la altura según lo necesites */
+    transition: 0.5s ease;
+}
+
+.champion-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.champion-card:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+}
+
+.champion-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.champion-card:hover .champion-info {
+    display: flex;
+}
+
+.champion-info p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3cefff;
+    text-shadow: 0 0 5px rgba(60, 239, 255, 0.8);
+}
+
+.skill-icons {
+    display: flex;
+    gap: 5px;
+}
+
+.skill-icons img {
+    width: 48px; /* Tamaño reducido de los iconos */
+    height: 48px;
+}
+
+footer {
+    margin-top: 50px;
+    color: #888888;
+}
+
+footer p {
+    font-size: 1em;
+}
